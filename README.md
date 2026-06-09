@@ -140,7 +140,7 @@ Inference is CPU-capable. Flags:
 
 ## Pretrained weights
 
-Slim, weights-only checkpoints (one per trained model) are attached to the [v1.0 release](RELEASE_URL). Download them and place them under the matching `weights/slim/` path used in the usage commands above. The **full training checkpoints** (optimizer/scheduler state) are **not** distributed.
+Slim, weights-only checkpoints (one per trained model) are attached to the [v1.0 release](https://github.com/rohanbalu05/fetal-head-biometry/releases/tag/v1.0). Download them and place them under the matching `weights/slim/` path used in the usage commands above. The **full training checkpoints** (optimizer/scheduler state) are **not** distributed.
 
 ---
 
