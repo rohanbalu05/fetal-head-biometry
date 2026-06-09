@@ -5,6 +5,7 @@
   <img src="https://img.shields.io/badge/Python-3.14-blue?style=flat&logo=python&logoColor=white" alt="Python 3.14">
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white" alt="PyTorch">
   <img src="https://img.shields.io/badge/Reference-Payer%20et%20al.%20MICCAI%202016-blue?style=flat" alt="Reference: Payer et al. MICCAI 2016">
+  <a href="https://colab.research.google.com/github/rohanbalu05/fetal-head-biometry/blob/main/notebooks/part_a_scn_inference_quickstart.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 </p>
 
 Automated fetal-head **BPD/OFD** landmark localization on 2-D ultrasound, solved two complementary ways: **(A)** direct heatmap-regression of the four biometry endpoints, and **(B)** cranium segmentation → ellipse geometry to recover the same endpoints. The two routes estimate the same head-ellipse axes, so they cross-check each other independently of any label.
@@ -80,6 +81,7 @@ Tracked source only (data, weights, run outputs, and the virtual environment are
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
+├── assets/demo/            # one CC BY 4.0 HC18 demo image + attribution
 ├── common/                 # shared dataset, heatmaps, geometry, metrics, splits
 ├── part_a_landmark/        # landmark models + trainers/testers
 │   ├── models.py  train_part_a.py  test_part_a.py
@@ -89,7 +91,7 @@ Tracked source only (data, weights, run outputs, and the virtual environment are
 │   └── weights/            # training logs (*_log.csv) tracked; .pth NOT tracked
 ├── analysis/               # EDA, fusion cross-check, ground-truth audit
 │   └── figures/            # report figures (*.png)
-├── notebooks/              # Colab training notebooks
+├── notebooks/              # Colab inference quickstart (Part A SCN)
 ├── scripts/                # smoke tests + weight-slimming utility
 └── report/                 # report.md, rendered PDF, build_pdf.py
 ```
