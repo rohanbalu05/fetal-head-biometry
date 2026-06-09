@@ -1,0 +1,9 @@
+torch==2.12.0
+numpy==2.4.6
+pandas==3.0.3
+pillow==12.2.0
+opencv-python==4.13.0.92
+matplotlib==3.10.9
+
+# build-only: regenerates the report PDF from report.md
+reportlab==4.5.1

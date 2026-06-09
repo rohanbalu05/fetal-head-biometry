@@ -1,0 +1,28 @@
+# Virtual environment
+.venv/
+
+# Python bytecode caches
+__pycache__/
+*.pyc
+
+# Model weights (all checkpoints, including slim/*.pth)
+# Training-log provenance files (weights/*_log.csv) are NOT .pth and stay tracked.
+*.pth
+
+# Provided challenge dataset — do not redistribute
+# (covers data/images/, data/masks/, data/derived/, and the ground-truth CSV)
+data/
+
+# Generated run outputs / inference overlays
+runs/
+
+# Submission-bundle duplicate (ignored, NOT deleted)
+_staging/
+
+# Archives
+*.zip
+
+# OS / tooling cruft
+.DS_Store
+.ipynb_checkpoints/
+*.egg-info/
